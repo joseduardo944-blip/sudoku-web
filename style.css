@@ -1,2 +1,70 @@
-/* Archivos preparados para descarga */
-body { font-family: Arial, sans-serif; padding: 20px; text-align: center; }
+*{
+  box-sizing:border-box;
+  font-family:Arial,sans-serif;
+}
+body{
+  margin:0;
+  background:#f4f6f8;
+  display:flex;
+  justify-content:center;
+  padding:30px;
+}
+body.dark{
+  background:#121212;
+  color:white;
+}
+.container{
+  text-align:center;
+}
+.controls{
+  margin-bottom:15px;
+}
+button,select{
+  padding:8px 12px;
+  margin:4px;
+}
+.timer{
+  font-size:20px;
+  font-weight:bold;
+  margin-bottom:15px;
+}
+.board{
+  width:540px;
+  height:540px;
+  display:grid;
+  grid-template-columns:repeat(9,1fr);
+  border:3px solid #222;
+  background:white;
+  margin:0 auto;
+}
+body.dark .board{
+  background:#1f1f1f;
+}
+.cell{
+  border:1px solid #bbb;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  font-size:24px;
+  cursor:pointer;
+  user-select:none;
+}
+.cell.fixed{
+  font-weight:bold;
+  color:#111;
+}
+body.dark .cell.fixed{
+  color:white;
+}
+.cell.user{
+  color:#1565c0;
+}
+.cell.selected{
+  background:#cfe8ff;
+}
+.cell.highlight{
+  background:#eaf4ff;
+}
+.hint{
+  margin-top:18px;
+}
