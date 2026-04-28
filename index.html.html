@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sudoku Web</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Sudoku</h1>
+
+    <div class="controls">
+      <label for="difficulty">Dificultad:</label>
+      <select id="difficulty">
+        <option value="easy">Fácil</option>
+        <option value="medium">Medio</option>
+        <option value="hard">Difícil</option>
+      </select>
+
+      <button id="new-game">Nuevo Juego</button>
+      <button id="theme-toggle">Modo Oscuro</button>
+    </div>
+
+    <div class="game-info">
+      <div id="timer" class="timer">Tiempo: 00:00</div>
+    </div>
+
+    <div id="board" class="board"></div>
+
+    <div class="scores">
+      <h2>Mejores tiempos</h2>
+      <ul id="best-times"></ul>
+    </div>
+
+    <p class="hint">Usa el teclado: 1-9 para escribir y Backspace para borrar.</p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
